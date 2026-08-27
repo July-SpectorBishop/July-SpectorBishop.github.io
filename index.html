@@ -200,7 +200,7 @@
             color: var(--blue);
         }
 
-        /* Headshot placeholder */
+        /* Headshot */
         .headshot-wrap {
             display: flex;
             flex-direction: column;
@@ -208,34 +208,13 @@
             padding-top: 3.5rem;
         }
 
-        .headshot-box {
+        .headshot-img {
             width: 200px;
             height: 200px;
             border-radius: 6px;
-            background: var(--blue-pale);
-            border: 2px dashed var(--blue-border);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 0.4rem;
-        }
-
-        .headshot-initials {
-            font-family: 'DM Serif Display', serif;
-            font-size: 3.25rem;
-            line-height: 1;
-            color: var(--blue);
-            opacity: 0.75;
-        }
-
-        .headshot-note {
-            font-size: 0.68rem;
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            color: var(--blue);
-            opacity: 0.5;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
         }
 
         /* ─── Sections ──────────────────────────────────── */
@@ -401,11 +380,10 @@
                 padding-top: 0;
                 align-items: flex-start;
             }
-            .headshot-box {
+            .headshot-img {
                 width: 110px;
                 height: 110px;
             }
-            .headshot-initials { font-size: 2.2rem; }
             .hero-name { font-size: 2.25rem; }
             .nav-links { gap: 1.1rem; }
             .contact-grid { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -461,10 +439,9 @@
             </div>
         </div>
         <div class="headshot-wrap">
-            <div class="headshot-box" title="Replace with your headshot">
-                <span class="headshot-initials">JSB</span>
-                <span class="headshot-note">headshot</span>
-            </div>
+            <img src="assets/placeholder_headshot.jpg"
+                 alt="July Spector-Bishop"
+                 class="headshot-img">
         </div>
     </section>
 
